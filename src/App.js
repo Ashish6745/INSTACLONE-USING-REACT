@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Feed from "./components/Feed";
+import Suggestions from "./components/Suggestions";
+import Title from "./components/Title";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div class="text-center bg-gray-300">
+
+<h1 class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">INSTAGRAM CLONE USING REACTJS + TAILWIND CSS </h1>
+</div>
+     <Header/>
+    
+     <Feed/>
+     <div class="mt-6">
+
+     <Title/>
+     </div>
+     <Suggestions/>
+
+     
     </div>
   );
 }
